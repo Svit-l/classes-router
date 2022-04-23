@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { SerchBar } from 'components/SerchBar/SerchBar';
+import { SearchBar } from 'components/SearchBar/SearchBar';
 import { fetchImages } from 'services/picturesAPI';
 import { PicturesList } from 'components/PicturesList/PicturesList';
 
@@ -23,7 +23,7 @@ export function Pictures() {
   return (
     <>
       <h1>Pictures</h1>
-      <SerchBar onSubmit={onSubmit} />
+      <SearchBar onSubmit={onSubmit} />
       <PicturesList pictures={data} />
     </>
   );
